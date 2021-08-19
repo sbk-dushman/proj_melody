@@ -15,6 +15,9 @@ li{
 a{
     text-decoration: none;
 }
+.button{
+    border:none;
+}
 .nav-list__link{
     color: #fff;
     padding: 12px 0;
@@ -30,7 +33,6 @@ a{
     position: relative;
 }
 .nav-list__link::after{
-
     content:"";
     position: absolute;
     left: 0;
@@ -87,4 +89,43 @@ background-color: #3596F5;
     display: flex;
     flex-direction: column;
     text-align: end;
+}
+.tower-img__svg path{
+    opacity: 0;
+}
+.tower-img__svg path:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.tower-section__select-level{
+    flex-grow: 1;
+    text-align: center;
+}
+.cunter-down-btn{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.cunter-group{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.tower-section{
+    padding-top: 54px;
+}
+.tower-section__select-level{
+    padding-top: 63px;
+}
+.cunter-button{
+    background-color:transparent
+}
+.tower-section__title{
+    font-family: Bebas Neue;
+
+font-size: 37px;
+text-transform: uppercase;
+
 }
