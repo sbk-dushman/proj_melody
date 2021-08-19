@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto ,sans-serif;
+	/* background-color: #fbfbfb; */
+}
+li{
+    list-style-type:none ;
+}
+a{
+    text-decoration: none;
+}
+.nav-list__link{
+    color: #fff;
+    padding: 12px 0;
+   
+}
+.header-phone__title{
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+
+} 
+.nav-list__item{
+    position: relative;
+}
+.nav-list__link::after{
+
+    content:"";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+/* .nav-list__item .nav-list__link:hover{
+background-color: #3596F5;
+как так-то блин 
+} */
+.nav-list__item:hover{
+    background-color: #3596F5;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.header{
+    background-color: #635854;
+    /* padding: 8px 0; */
+    border-bottom: 4px solid #3596F5;
+}
+.header__nav{
+    margin-left: 181px;
+    max-width: 65%;
+}
+.nav-list__item{
+    height: 100%;
+    position: relative;
+    text-align: center;
+    /* margin-right: 62px; */
+    padding: 9px 0;
+    max-width: 15%;
+}
+.nav-list__item:not(:last-child){
+    margin-right: 62px;
+}
+.fixed-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
+.header-container{
+    align-items: center;
+}
+.header-phone__link{
+    font-size: 17px;
+    font-weight: 900;
+    color: #fff;
+}
+.header-phone{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
